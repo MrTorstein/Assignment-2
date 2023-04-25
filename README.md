@@ -1,3 +1,3 @@
 # Assignment-2
  
-Preview of website: <TO be added>
+Preview of website: https://mrtorstein.github.io/Assignment-2/
