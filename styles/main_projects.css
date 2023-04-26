@@ -1,0 +1,76 @@
+@font-face { /* Copyright 2004 Google LLC */
+	font-family: "Roboto";
+	src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: normal;
+}
+@font-face { /* Copyright 2004 Google LLC */
+	font-family: "Roboto";
+	src: url(../fonts/Roboto-Bold.ttf) format("truetype");
+	font-weight: bold;
+}
+
+body {
+    font-family: Roboto;
+    color: rgb(188, 190, 205); /* Light grey color. Darker than background color of timeline */
+}
+
+.title {
+    font-size: 36px;
+    color: #1F2937; /* Blue-black color */
+}
+
+.timeline {
+    padding: 40px 15vw;
+    
+    background-color: #E5E7EB; /* Light grey color */
+    color: #1F2937;
+}
+
+.timeline .title {
+    text-align: center;
+}
+
+.row { /* Timelines tabel rows */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+}
+
+.item { /* Timelines rows items */
+    overflow-X: hidden;
+    text-align: center;
+}
+
+.line { /* Timelines line. Removes whitespace between hyphens to make one continues line */
+    letter-spacing: -3px;
+    white-space: nowrap;
+}
+
+.item_2 { /* Timelines row item nr.2. Adds margin to make timeline propotional */
+    margin: 0 0 0 100px;
+}
+
+.item p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.item a {
+    text-decoration: none;
+    color: #1F2937;
+}
+
+section {
+    display: flex;
+    margin: 40px 15vw;
+}
+
+div.column_1 {
+    margin: 0 4vw 0 0
+}
+
+div.column_2 {
+    margin: 0 0 0 2vw;
+    
+}
