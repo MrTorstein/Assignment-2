@@ -77,3 +77,37 @@ h1 {
     font-size: 15px
     
 }
+
+.cta {
+    background-color: #3882F6;
+    color: #FFF;
+    padding: 1em 6em;
+    margin: auto;
+    margin-top: 1em;
+    border-radius: .5em;
+    width: 50%;
+    font-family: Roboto;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.cta h4 {
+    margin-bottom: 0;
+}
+
+.cta p {
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.cta button {
+    background-color: #3882F6;
+    color: #FFF;
+    padding: .5em 1em;
+    border-radius: .5em;
+    border: 1px solid white;
+}
