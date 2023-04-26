@@ -1,6 +1,6 @@
 /* Header section style */
 header {
-    height: 30em;
+    padding-bottom: 5em;
 
     background-color: #1F2937;
     color: #F9FAF8;
@@ -39,7 +39,7 @@ header a {
 }
 
 .first_column {
-    width: 25vw;
+    width: 30em;
 }
 
 h1 {
