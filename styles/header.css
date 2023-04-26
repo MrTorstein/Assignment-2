@@ -69,8 +69,7 @@ h1 {
     background-color: #3882F6;
     border-style: none;
     border-radius: 10px;
-    height: 35px;
-    width: 120px;
+    padding: 10px;
     
     color: #F9FAF8;
     font-family: Roboto, sans-serif;
