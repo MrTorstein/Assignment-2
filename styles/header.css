@@ -111,3 +111,13 @@ h1 {
     border-radius: .5em;
     border: 1px solid white;
 }
+
+.main-footer {
+    background-color: #1F2937;
+    color: #FFF;
+    width: 100%;
+    padding: 1em 0em;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+}
