@@ -9,8 +9,28 @@
 	font-weight: bold;
 }
 
+.button {
+    background-color: #3882F6; /* Clear Blue */
+    border-style: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 120px;
+    
+    color: #F9FAF8; /* White-ish */
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 6px 0 0 0;
+    
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     color: rgb(188, 190, 205); /* Light grey color. Darker than background color of timeline */
 }
 
@@ -57,7 +77,6 @@ body {
 }
 
 .item a {
-    text-decoration: none;
     color: #1F2937;
 }
 
@@ -77,4 +96,9 @@ div.column_2 {
 #P1 .column_2, #P2 .column_1, #P3 .column_2 {
     display: flex;
     align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
 }
