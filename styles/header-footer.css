@@ -58,6 +58,10 @@ header .button {
     font-size: 15px
 }
 
+.profile_pic {
+    max-width: 25vw;
+}
+
 /* End of Header section style */
 
 /* Footer section style */
