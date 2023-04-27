@@ -39,7 +39,7 @@ header {
     flex-direction: column;
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 0 5em 2em;
+    padding: 0 10em 2em;
 }
 
 .header-first-row {
@@ -121,7 +121,7 @@ img {
 }
 
 /* If screen size smaller than 420px the order and look of the image and hero text will be adjusted*/
-@media (max-width: 660px) {
+@media (max-width: 990px) {
     .header-second-row {
         flex-wrap: nowrap;
         flex-direction: column;
@@ -133,6 +133,7 @@ img {
     .hero-text {
         order: 2;
         text-align: center;
+        align-self: center;
     }
 
     .header-second-row img {
