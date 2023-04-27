@@ -41,20 +41,27 @@ a {
 }
 
 .button {
-    background-color: #3882F6;  /* Clear Blue */
+    background-color: #3882F6;
+    /* Clear Blue */
     border-radius: .5em;
     padding: .5em 1em;
 
-    color: #F9FAF8; /* White-ish */
+    color: #F9FAF8;
+    /* White-ish */
     font-family: Roboto, sans-serif;
     font-size: 15px;
-    
+
     cursor: pointer;
 }
+
 /* End of All sections style */
 
 main {
-    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 }
 
 #skills {
@@ -86,8 +93,7 @@ main {
     max-width: 200px;
 }
 
-.skills-item img {
-    max-width: 100%;
+.skills-item>img {
     height: auto;
     max-width: 100%;
     border-radius: 10%;
@@ -145,6 +151,7 @@ blockquote::before {
     top: -0.3em;
     left: -0.25em;
 }
+
 /*
 
 /* Call to action section style */
@@ -181,11 +188,13 @@ blockquote::before {
     border-radius: .5em;
     border: 1px solid white;
 }
+
 /* End of Call to action section */
 
 /* Main section Projects page */
 #projects {
-    color: rgb(188, 190, 205); /* Light grey color. Darker than background color of timeline */
+    color: rgb(188, 190, 205);
+    /* Light grey color. Darker than background color of timeline */
 }
 
 #projects main {
@@ -194,13 +203,66 @@ blockquote::before {
 
 .title {
     font-size: 36px;
-    color: #1F2937; /* Blue-black color */
+    color: #1F2937;
+    /* Blue-black color */
 }
 
 .timeline {
     padding: 40px 15vw;
-    
-    background-color: #E5E7EB; /* Light grey color */
+}
+
+/* Contact me form style */
+.contact-form {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form h3 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #1F2937;
+    margin-bottom: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+.contact-form button[type="submit"] {
+    padding: 0.5rem 1rem;
+    background-color: #3882F6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* End of Contact me form style */
+    {
+    background-color: #E5E7EB;
+    /* Light grey color */
     color: #1F2937;
 }
 
@@ -208,24 +270,28 @@ blockquote::before {
     text-align: center;
 }
 
-.timeline_row { /* Timelines tabel rows */
+.timeline_row {
+    /* Timelines tabel rows */
     display: flex;
     justify-content: space-around;
     width: 100%;
     padding: 0;
 }
 
-.item { /* Timelines rows items */
+.item {
+    /* Timelines rows items */
     overflow-X: hidden;
     text-align: center;
 }
 
-.line { /* Timelines line. Removes whitespace between hyphens to make one continues line */
+.line {
+    /* Timelines line. Removes whitespace between hyphens to make one continues line */
     letter-spacing: -3px;
     white-space: nowrap;
 }
 
-.item_2 { /* Timelines row item nr.2. Adds margin to make timeline propotional */
+.item_2 {
+    /* Timelines row item nr.2. Adds margin to make timeline propotional */
     margin: 0 0 0 100px;
 }
 
@@ -251,7 +317,9 @@ div.column_2 {
     margin: 0 0 0 2vw;
 }
 
-#P1 .column_2, #P2 .column_1, #P3 .column_2 {
+#P1 .column_2,
+#P2 .column_1,
+#P3 .column_2 {
     display: flex;
     align-items: center;
 }
