@@ -1,38 +1,12 @@
-@font-face {
-    /* Copyright 2004 Google LLC */
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
-    font-weight: normal;
-}
-
-@font-face {
-    /* Copyright 2004 Google LLC */
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Bold.ttf) format("truetype");
-    font-weight: bold;
-}
-
-@font-face {
-    /* Copyright 2004 Google LLC */
-    font-family: "Roboto";
-    src: url(../fonts/Roboto-Light.ttf) format("truetype");
-    font-weight: 200;
-}
-
-* {
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
 /* Header section style */
 header {
-    height: 25%;
+    height: 30em;
 
     background-color: #1F2937;
     color: #F9FAF8;
-    font-family: Roboto, sans-serif;
 }
 
-.row {
+header .row {
     display: flex;
     align-items: center;
     margin: 0 15vw;
@@ -57,8 +31,6 @@ header {
 
 header a {
     margin: 10px;
-
-    text-decoration: none;
 }
 
 .second_row {
@@ -75,12 +47,11 @@ h1 {
     font-size: 48px;
 }
 
-.button {
+header .button {
     background-color: #3882F6;
     border-style: none;
     border-radius: 10px;
-    height: 35px;
-    width: 120px;
+    padding: 10px;
 
     color: #F9FAF8;
     font-family: Roboto, sans-serif;
@@ -91,5 +62,15 @@ h1 {
 
 /* Footer section style */
 
+.main-footer {
+    background-color: #1F2937;
+    color: #FFF;
+    width: 100%;
+    padding: .5em 0em;
+    margin-top: 1em;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+}
 
 /* End of Footer section style */
