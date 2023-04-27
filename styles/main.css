@@ -256,6 +256,10 @@ div.column_2 {
     align-items: center;
 }
 
+section img {
+    max-width: 25vw;
+}
+
 nav {
     display: flex;
     justify-content: center;
