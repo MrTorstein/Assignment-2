@@ -99,6 +99,10 @@ main {
     border-radius: 10%;
 }
 
+.skills-item>p {
+    color: #90979f;
+}
+
 #quote {
     background-color: #E5E7EB;
 }
