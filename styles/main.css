@@ -267,11 +267,11 @@ blockquote::before {
 }
 
 /* End of Contact me form style */
-/* {
-    background-color: #E5E7EB; */
-/* Light grey color */
-/* color: #1F2937;
-} */
+.timeline {
+    background-color: #E5E7EB;
+    /* Light grey color */
+    color: #1F2937;
+}
 
 .timeline .title {
     text-align: center;

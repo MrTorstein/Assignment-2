@@ -80,8 +80,9 @@ header {
 }
 
 .hero-text {
-    flex: 1;
+    /* flex: 1; */
     align-self: flex-start;
+    max-width: 37%;
 }
 
 .hero-text h1 {
@@ -102,7 +103,7 @@ img {
     height: auto;
 }
 
-/* If screen size smaller than 420px the order and look of the navigation and logo text will be adjusted*/
+/* Adjust the view of the logo and navigation when screen is smaller*/
 @media (max-width: 518px) {
     .header-first-row {
         flex-wrap: nowrap;
@@ -120,13 +121,12 @@ img {
     }
 }
 
-/* If screen size smaller than 420px the order and look of the image and hero text will be adjusted*/
-@media (max-width: 990px) {
+/* Overlap the image in the header with the hero text when screen size is smaller than 1170px*/
+@media (max-width: 1170px) {
     .header-second-row {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
-
         gap: 30px;
     }
 

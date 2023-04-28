@@ -6,46 +6,60 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../styles/contact_header.css">
-        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/style.css">
         <title>Contact me</title>
     </head>
 
     <body>
         <header>
             <div class="header-first-row">
-                <h2 class="logo"> [Logo text?] </h2>
-
-                <nav class="nav-links">
+                <div class="logo">
+                    <h2>Logo</h2>
+                </div>
+                <nav>
                     <a href="../index.html">Homepage</a>
+                    &nbsp;&nbsp;&nbsp;
                     <a href="../pages/projects.html">Projects</a>
                 </nav>
             </div>
             <div class="header-second-row">
                 <div class="hero-text">
-                    <h1> [Name of Person] </h1>
-                    <p>
-                        Let's work together to create something amazing. Contact me today!
-                    </p>
+                    <h1>John Wick</h1>
+                    <p>Let's work together to create something amazing. Contact me today!</p>
                 </div>
                 <div>
-                    <img class="Profile_pic" src="../images/Placeholder.png" alt="Placeholder for profilepicture">
+                    <img src="../images/Placeholder.png"
+                        alt="Meet John, a skilled software engineer with a confident and focused expression. 
+                        His short, dark hair is neatly styled, and he's dressed professionally in a collared shirt. 
+                        John's expertise and attention to detail are evident in his posture and demeanor, making him a valuable asset to any software development team.">
                 </div>
             </div>
         </header>
 
         <main>
-            <section class="contact-form">
-                <h3>Contact Me</h3>
-                <form action="" method="post">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
-                    <button type="submit" disabled>Send</button>
-                </form>
+            <section id="contact-me">
+                <div class="contact-form">
+                    <h3>Contact Me</h3>
+                    <form action="" method="post">
+                        <table>
+                            <tr>
+                                <th><label for="name">Name</label></th>
+                                <td><input type="text" id="name" name="name" placeholder="Enter your name" required></td>
+                            </tr>
+                            <tr>
+                                <th><label for="email">Email</label></th>
+                                <td><input type="email" id="email" name="email" placeholder="Enter your email" required></td>
+                            </tr>
+                            <tr>
+                                <th><label for="message">Message</label></th>
+                                <td><textarea id="message" name="message" placeholder="Enter your message" required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button type="submit" disabled>Send</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
             </section>
         </main>
 
