@@ -225,29 +225,44 @@ blockquote::before {
 
 /* Contact me form style */
 .contact-form {
-    margin: 0 15vw;
+    margin: auto;
     text-align: center;
     border-radius: 10px;
     text-align: center;
     background-color: #f8f8f8;
+    font-family: Roboto;
+    width: 50%;
 }
 
 .contact-form h3 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.contact-form form {
+/* .contact-form form {
     display: flex;
     flex-direction: column;
+} */
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
 }
 
 .contact-form label {
-    font-size: 1.2rem;
+    font-size: 14px;
     margin-bottom: 0.5rem;
+    color: #1F2937;
+    width: 5em;
+    text-align: left;
+}
+
+.contact-form ::placeholder {
     color: #90979f;
+    font-weight: 300;
 }
 
 .contact-form input,
@@ -257,11 +272,12 @@ blockquote::before {
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
-    font-size: 1rem;
+    font-size: 14px;
 }
 
 .contact-form button[type="submit"] {
     padding: 0.5rem 1rem;
+    margin-bottom: 2em;
     background-color: #3882F6;
     color: #fff;
     border: none;
