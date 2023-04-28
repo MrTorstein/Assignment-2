@@ -6,102 +6,111 @@
         <meta http-equiv="X-UA-Compatible" content="ie = edge">
         <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
 
-        <link rel="stylesheet" href="./styles/header-footer.css">
-        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/style.css">
 
-        <title>[title]</title>
+        <title>Software Developer Portfolio | John Wick - Projects and Experience</title>
     </head>
 
-    <body>
+    <body id="homepage">
         <header>
-            <div class="row first_row">
-                <h2 class="logo"> Logo text? </h2>
-
+            <div class="header-first-row">
+                <div class="logo">
+                    <h2>Logo</h2>
+                </div>
                 <nav>
-                    <a class="thin_text" , href="./index.html"> Homepage </a>
-                    <a class="thin_text" , href="./pages/contact.html"> Contact Page </a>
-                    <a class="thin_text" , href="./pages/projects.html"> Projects </a>
+                    <a href="./pages/contact.html">Contact me</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="./pages/projects.html">Project</a>
                 </nav>
             </div>
-            <div class="row second_row">
-                <div class="first_column">
-                    <h1> Name of Person </h1>
-                    <h3 class="thin_text">
-                        Placeholder text for the short introduction to John Doe.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua.
-                    </h3>
-                    <a class="button" , href="./pages/contactpage.html"> Contact me </a>
+            <div class="header-second-row">
+                <div class="hero-text">
+                    <h1>Hero Text here</h1>
+                    <p>subtext to be place over here</p>
+                    <a class="button" href="./pages/contact.html">Contact me</a>
                 </div>
-                <div class="second_column">
-                    <img class="profile_pic" , src="./images/Placeholder.png" , alt="Placeholder for profilepicture">
+                <div>
+                    <img src="../images/Placeholder.png"
+                        alt="Meet John, a skilled software engineer with a confident and focused expression. 
+                        His short, dark hair is neatly styled, and he's dressed professionally in a collared shirt. 
+                        John's expertise and attention to detail are evident in his posture and demeanor, making him a valuable asset to any software development team.">
                 </div>
             </div>
         </header>
 
         <main>
             <section id="skills">
-                <h3>[Skills information]</h3>
-                <div class="skills-container">
-                    <div class="skills-item">
-						<div class = "img-div">
-                        	<img src="./images/full-stack.png" alt="First skill as a Full-Stack Web Developer:">
-						</div>
-                        <p>I have experience building responsive and scalable web applications using modern frontend and backend technologies. I can handle
-                            everything from designing the user interface to implementing the database and deploying the</p>
-                    </div>
-                    <div class="skills-item">
-						<div class = "img-div">
-                        	<img src="./images/oop.png" alt="Second skill in Object-Oriented Programming:">
-						</div>
-                        <p>I am proficient in object-oriented programming principles and design patterns. I can write clean, reusable, and maintainable code
-                            that adheres to best practices and industry standards. I am also familiar with various </p>
-                    </div>
-                    <div class="skills-item">
-						<div class = "img-div">
-                        	<img src="./images/data-structure.png" alt="Third skill in Data Structures and Algorithm:">
-						</div>
-                        <p>I have a strong foundation in data structures and algorithms, which allows me to write efficient and optimized code. I can solve
+                <h3>Skills that set me apart: A glimpse into my toolbox</h3>
+                <div>
+                    <article class="skills-item">
+                        <div>
+                            <img src="../images/full-stack.png" alt="Web development Software development Custom software Mobile app development 
+                            Computer Software, Business, web Design, people png thumbnail">
+                        </div>
+                        <p>
+                            I have experience building responsive and scalable web applications using modern frontend and backend technologies. I can handle
+                            everything from designing the user interface to implementing the database and deploying the
+                        </p>
+                    </article>
+                    <article class="skills-item">
+                        <div>
+                            <img src="../images/oop.png" alt="Big screen with mouse and keyboard and 
+                                too many icons bursted out of the screen for many apps and programs png thumbnail">
+                        </div>
+                        <p>
+                            I am proficient in object-oriented programming principles and design patterns. I can write clean, reusable, and maintainable code
+                            that adheres to best practices and industry standards. I am also familiar with various
+                        </p>
+                    </article>
+                    <article class="skills-item">
+                        <div>
+                            <img src="../images/data-structure.png" alt="Stack Workflow Queue Data structure Algorithm, Johnny Test, 
+                            angle, text png thumbnail">
+                        </div>
+                        <p>
+                            I have a strong foundation in data structures and algorithms, which allows me to write efficient and optimized code. I can solve
                             complex problems using various algorithms such as sorting, searching, and graph traversal. I am also familiar with data analysis and
-                            visualization tools such as SQL, Pandas, and Matplotlib.</p>
-                    </div>
-                    <div class="skills-item">
-						<div class = "img-div">
-                        	<img src="./images/devops.png" alt="Fourth skill in DevOps:">
-						</div>
-                        <p> I am familiar with DevOps practices and tools such as Git, Jenkins, and Docker. I can automate the software development lifecycle
+                            visualization tools such as SQL, Pandas, and Matplotlib.
+                        </p>
+                    </article>
+                    <article class="skills-item">
+                        <div>
+                            <img src="../images/devops.png" alt="DevOps Software Developer Agile software development Software Testing Puppet, 
+                                icon devops logo, text, logo png thumbnail">
+                        </div>
+                        <p>
+                            I am familiar with DevOps practices and tools such as Git, Jenkins, and Docker. I can automate the software development lifecycle
                             from build to deployment and ensure that the application is always available and up-to-date. I am also familiar with cloud computing
-                            platforms such as AWS and Google Cloud.</p>
-                    </div>
+                            platforms such as AWS and Google Cloud.
+                        </p>
+                    </article>
                 </div>
             </section>
 
             <section id="quotation">
-                <blockquote>
-                    <em>How wonderful it is that nobody need wait a single moment before starting to improve the world.</em>
-                    <cite><strong>- Anne Frank</strong></cite>
-                </blockquote>
-            </section>
-
-            <section class="cta">
                 <div>
-                    <h4>Call to action! It's time!</h4>
-                    <p>Sign up for our product by clicking that button right over there!</p>
+                    <blockquote>
+                        How wonderful it is that nobody need wait a single moment before starting to improve the world.
+                        <cite><strong>- Anne Frank</strong></cite>
+                    </blockquote>
                 </div>
 
-                <a href="#">
-                    <button>
-                        Sign up
-                    </button>
-                </a>
             </section>
 
+            <section id="cta">
+                <div>
+                    <div id="cta-text-container">
+                        <h4>Have a project in mind? I'd love to hear about it.</h4>
+                        <p>Let's collaborate and bring your website to life. Drop me a line today!</p>
+                    </div>
+                    <a class="button" href="./pages/contact.html">Get in touch!</a>
+                </div>
 
+            </section>
         </main>
 
-        <footer class="main-footer">
-            <p>Copyright ©</p>
+        <footer>
+            <p>Copyright &copy;</p>
         </footer>
     </body>
 
