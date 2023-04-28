@@ -33,6 +33,8 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0px;
 }
 
@@ -42,20 +44,18 @@ a {
 
 .button {
     background-color: #3882F6;
-    /* Clear Blue */
     border-radius: .5em;
     padding: .5em 1em;
-
+    
     color: #F9FAF8;
-    /* White-ish */
     font-family: Roboto, sans-serif;
     font-size: 15px;
 
     cursor: pointer;
 }
-
 /* End of All sections style */
 
+/* Homepage main section */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -109,10 +109,6 @@ main {
     color: #90979f;
 }
 
-#quote {
-    background-color: #E5E7EB;
-}
-
 blockquote:before {
     color: #ccc;
     content: "\201C";
@@ -163,19 +159,24 @@ blockquote::before {
     left: -0.25em;
 }
 
-/*
+/* If screen size smaller than 405px set max width of quote section*/
+@media (max-width: 405px) {
+    #quotation {
+        max-width: 99vw;
+        padding: 2vw;
+    }
+}
 
 /* Call to action section style */
 .cta {
     background-color: #3882F6;
-    color: #FFF;
+    color: #F9FAF8;
     padding: 1em 6em;
     margin: auto;
     margin-top: 3em;
     margin-bottom: 4.5em;
     border-radius: .5em;
     width: 50%;
-    font-family: Roboto;
     font-size: 15px;
     display: flex;
     justify-content: space-between;
@@ -193,40 +194,28 @@ blockquote::before {
     font-weight: 300;
 }
 
-.cta button {
-    background-color: #3882F6;
-    color: #FFF;
-    padding: .5em 1em;
+.cta a {
     border-radius: .5em;
     border: 1px solid white;
 }
 
-/* End of Call to action section */
-
-/* Main section Projects page */
-#projects {
-    color: rgb(188, 190, 205);
-    /* Light grey color. Darker than background color of timeline */
+/* If screen size smaller than 405px set max width of quote section*/
+@media (max-width: 405px) {
+    .cta {
+        max-width: 90vw;
+        padding: 1em 20vw;
+    }
 }
 
-#projects main {
-    padding: 0;
-}
-
-.title {
-    font-size: 36px;
-    color: #1F2937;
-    /* Blue-black color */
-}
-
-.timeline {
-    padding: 40px 15vw;
-}
+/* End of homepage main section */
 
 /* Contact me form style */
+#contact {
+    gap: 20px;
+}
+
 .contact-form {
     margin: 0 15vw;
-    text-align: center;
     border-radius: 10px;
     text-align: center;
     background-color: #f8f8f8;
@@ -274,12 +263,39 @@ blockquote::before {
     background-color: #0056b3;
 }
 
+/* If screen smaller than 300px remove margin to allow downscaling without odd header shrinking */
+@media (max-width: 300px) {
+    .contact-form {
+        margin: 0;
+    }
+}
+
 /* End of Contact me form style */
-/* {
-    background-color: #E5E7EB; */
-/* Light grey color */
-/* color: #1F2937;
-} */
+
+/* Projects page style */
+#projects {
+    color: rgb(188, 190, 205);
+}
+
+.padding {
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+.title {
+    font-size: 36px;
+    color: #1F2937;
+    overflow-X: auto;
+}
+
+.timeline {
+    padding: 40px 0;
+    
+    background-color: #E5E7EB;
+    color: #1F2937;
+    
+    max-width: 100vw;
+}
 
 .timeline .title {
     text-align: center;
@@ -289,14 +305,13 @@ blockquote::before {
     /* Timelines tabel rows */
     display: flex;
     justify-content: space-around;
-    width: 100%;
     padding: 0;
 }
 
 .item {
     /* Timelines rows items */
-    overflow-X: hidden;
     text-align: center;
+    overflow-X: hidden;
 }
 
 .line {
@@ -321,15 +336,8 @@ blockquote::before {
 
 #projects section {
     display: flex;
-    margin: 40px 15vw;
-}
-
-div.column_1 {
-    margin: 0 4vw 0 0;
-}
-
-div.column_2 {
-    margin: 0 0 0 2vw;
+    justify-content: space-between;
+    gap: 10px
 }
 
 #P1 .column_2,
@@ -339,7 +347,40 @@ div.column_2 {
     align-items: center;
 }
 
+.section img,
+.column_1,
+.column_2 {
+    max-width: 40vw;
+}
+
 nav {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 853px) {
+    .section {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .section img,
+    .column_1,
+    .column_2 {
+        max-width: 70vw;
+    }
+    
+    #P1 .column_1,
+    #P2 .column_2,
+    #P3 .column_1 {
+        order: 1;
+    }
+    
+    #P1 .column_2,
+    #P2 .column_1,
+    #P3 .column_2 {
+        order: 2;
+    }
 }

@@ -1,25 +1,27 @@
 /* Header section style */
-header {
-    padding-bottom: 5em;
 
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15vw 2em;
+    
     background-color: #1F2937;
     color: #F9FAF8;
 }
 
 header .row {
     display: flex;
-    align-items: center;
-    margin: 0 15vw;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .first_row {
-    height: 10%;
-    justify-content: space-between;
+    padding: 20px 0;
 }
 
 .logo {
-    align-content: center;
-
+    min-width: 127px;
     font-size: 24px;
 }
 
@@ -30,12 +32,11 @@ header .row {
 }
 
 header a {
-    margin: 10px;
+    padding-left: 10px;
 }
 
 .second_row {
-    height: 90%;
-    justify-content: space-between;
+    padding: 30px 0;
 }
 
 .first_column {
@@ -43,32 +44,70 @@ header a {
 }
 
 h1 {
+    margin-top: 0;
     font-weight: bold;
     font-size: 48px;
 }
 
-header .button {
-    background-color: #3882F6;
-    border-style: none;
-    border-radius: 10px;
-    padding: 10px;
+header p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
 
-    color: #F9FAF8;
-    font-family: Roboto, sans-serif;
-    font-size: 15px
+header .button {
+    border-style: none;
 }
 
 .profile_pic {
-    max-width: 25vw;
+    max-width: 50vw;
+}
+
+/* If screen size smaller than 518px the order and look of the navigation and logo text will be adjusted*/
+@media (max-width: 518px) {
+    .first_row {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    .nav-links {
+        order: 1;
+    }
+}
+
+/* If screen size smaller than 990px the order and look of the image and hero text will be adjusted*/
+@media (max-width: 990px) {
+    .second_row {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-self: center;
+    }
+    
+    .second_row img{
+        order: 1;
+        max-width: 99vw;
+    }
+    
+    .first_column {
+        order: 2;
+        max-width: 99vw;
+    }
 }
 
 /* End of Header section style */
 
 /* Footer section style */
 
-.main-footer {
+.footer {
     background-color: #1F2937;
-    color: #FFF;
+    color: #F9FAF8;
     width: 100%;
     padding: .5em 0em;
     font-family: Roboto, sans-serif;
