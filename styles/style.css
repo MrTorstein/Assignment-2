@@ -175,10 +175,7 @@ section {
 }
 
 #skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     flex-direction: column;
     margin: 5vw 0;
 }
@@ -475,10 +472,15 @@ div.column_1 {
 }
 
 #P1 .column_2,
-#P2 .column_1,
 #P3 .column_2 {
     display: flex;
     align-items: center;
+    flex-direction: column;
+}
+
+#P2 .column_1 {
+    display: flex;
+    align-items: left;
     flex-direction: column;
 }
 
@@ -512,6 +514,10 @@ div.column_1 {
 
     div.column_1 {
         max-width: 100%;
+    }
+
+    .section .title {
+        text-align: center;
     }
 
 }
